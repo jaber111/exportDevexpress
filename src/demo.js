@@ -8,8 +8,8 @@ import {
   ExportPanel
 } from "@devexpress/dx-react-grid-bootstrap4";
 import saveAs from "file-saver";
-import styled from 'styled-components';
-import { orders } from "../../../demo-data/orders";
+import styled from "styled-components";
+import { orders } from "./demo-data/orders";
 
 const onSave = (workbook) => {
   workbook.xlsx.writeBuffer().then((buffer) => {
@@ -27,8 +27,6 @@ const columns = [
   { name: "SaleAmount", title: "Sale Amount" }
 ];
 
-
-
 export default () => {
   const exporterRef = useRef(null);
 
@@ -37,13 +35,11 @@ export default () => {
   }, [exporterRef]);
 
   const ExportButton = (props) => (
-    <button style={{ color: "green" }} onClick={startExport}
-    >walo</button>
+    <button style={{ color: "green" }} onClick={startExport}>
+      walo
+    </button>
   );
-    const ExportMenu = (props) => (
-    <ExportPanel.Menu {...props} visible={false}/>
-
-  );
+  const ExportMenu = (props) => <ExportPanel.Menu {...props} visible={false} />;
   return (
     <div className="card">
       <Grid rows={orders} columns={columns}>
