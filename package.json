@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "@devexpress/dx-react-core": "2.7.3",
+    "@devexpress/dx-react-grid": "2.7.3",
+    "@devexpress/dx-react-grid-bootstrap4": "2.7.3",
+    "@devexpress/dx-react-grid-export": "2.7.3",
+    "file-saver": "^2.0.2",
+    "react": "^16.14.0",
+    "react-dom": "latest",
+    "styled-components": "5.2.1"
+  },
+  "name": "fjkhd",
+  "description": null,
+  "version": "0.0.46",
+  "devDependencies": {
+    "react-scripts": "1.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
